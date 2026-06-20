@@ -1,0 +1,125 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding-bottom: 7.5rem;
+    background-image: 
+        url("../images/dot.png"),
+        linear-gradient(to bottom, #050505, #090926 50%, #141313);
+    background-size: 8px, auto;
+}
+
+.hero-title {
+    background-image: linear-gradient(to right, var(--pink-start), 
+    #C62452 45%, var(--pink-end));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-align: center;
+    font-size: 10rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow( 0 4px 40px rgba(0,0,0,1));
+}
+
+.hero-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: -5.5rem;
+    z-index: 2;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10rem;
+}
+
+.hero-list-right {
+    text-align: right;
+}
+
+.hero-list-title {
+    font-weight: 300;
+    font-size: 2.2rem;
+    color: var(--grey-text);
+}
+
+.hero-list-text {
+    margin-left: 0;
+    font-weight: 800;
+    font-size: 3.2rem;
+    color: var(--light);
+    letter-spacing: var(--letter-spacing);
+}
+
+.hero-footer {
+    margin-top: 8rem;
+    text-align: center;
+}
+
+@media (max-width: 1280px){
+    .hero-title {
+        font-size: 8rem;
+    }
+
+    .hero-image  {
+        max-width: 50rem;
+    }
+}
+
+@media (max-width: 760px){
+    .hero {
+        min-height: 100vh;
+        padding-top: 12rem;
+        
+        padding-bottom: 2rem;
+        justify-content: center;
+    }
+
+    
+    .hero-title {
+        font-size: 6rem;
+    }
+
+    .hero-text {
+        margin-top: 1rem;
+        padding: 0 2rem;
+
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;     
+    }
+
+    .hero-image  {
+        max-width: 48rem;
+        width: 120%;
+        top: -3rem;
+        right: 3rem;
+    }
+
+    .hero-list-title {  
+        font-size: 1.6rem;   
+    }
+
+    .hero-list-text {
+        font-size: 2.4rem;
+    }
+    .hero-list-right{
+        text-align: center;
+    }
+    .hero-footer {
+        margin-top: 3rem;
+    }
+
+}
+

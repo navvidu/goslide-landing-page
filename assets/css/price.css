@@ -1,0 +1,25 @@
+.price {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 9.6rem;
+    color: var(--primary);
+    line-height: 1.1;
+    letter-spacing: var(--letter-spacing);
+    font-weight: 800;
+    
+    s {  /*тег внутри класса */
+        margin-right: 2rem;
+        font-size: 6.4rem;
+        opacity: 0.6;
+    }
+}
+
+@media (max-width: 760px){
+    .price {
+        font-size: 4.8rem;
+
+        s{
+            font-size: 4rem;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+    /* flex-wrap: wrap; */
+    gap: 1.5rem;  
+    margin: 10rem 0;
+}
+
+
+.products-name {
+    font-size: 2.4rem;
+    color: var(--primary);
+    font-weight: 800;
+    text-align: center;
+}
+
+.products-photo {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 760px){
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+    }
+    .products-name {
+        font-size: 2rem;
+    }
+}

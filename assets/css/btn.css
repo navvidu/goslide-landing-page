@@ -1,0 +1,103 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8125em 1.75em;
+    font-family: inherit;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--primary);
+    border-radius: 2.75em;
+    font-weight: 700;
+    line-height: 1.1;
+    background-color: var(--light);
+
+
+    transition: transform 0.3s ease;
+   
+    &:hover,
+    &:focus {
+        background-color: var(--pink-start);
+        transform: scale(1.05); 
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+}
+
+.btn-icon {
+    width: 1.25em; /*зн в пикс или рем делим на шрифт*/
+    height: 1.25em;
+    margin-right: 0.8rem;
+
+    stroke: var(--primary);
+    transition: stroke .2s linear;
+}
+
+.btn--large {
+    font-size: 2.4rem;
+    text-transform: uppercase;   
+}
+
+.btn--shadow {
+    box-shadow: 0 5px 18px rgb(108, 110, 237, 0.6);
+}
+
+.hero-footer {
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.btn--primary {
+    padding: 2.5rem 3.5rem;
+
+    background-color: var(--primary);
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgb(44, 48, 56, 0.4);
+    color: var(--light);
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    &:hover,
+    &:focus {
+        background-color: var(--pink-start);
+    }
+     &:focus {
+        outline: none;
+    }
+}
+
+.btn--gradient {
+    background-image: linear-gradient(to right,
+    var(--pink-start),
+    var(--pink-end));
+
+    color: var(--light);
+    font-size: 3.2rem;
+   
+    padding: 2.2rem 6rem;
+    font-weight: 800;
+     .btn-icon{  /*класс внутри класса */
+        width: 3.4rem;
+        height: 3.4rem;
+        margin-right: 1.5rem;
+    }
+
+    box-shadow: 0 4px 10px rgb(36, 36, 36, 0.3);
+
+}
+
+@media (max-width: 760px){
+    .btn{
+        font-size: 1.4rem;
+    }
+    .btn--large {
+        font-size: 1.6rem;
+    }
+    .btn--gradient {
+        font-size: 2.4rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}

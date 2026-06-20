@@ -1,0 +1,51 @@
+.random-text {
+    text-align: center; 
+    color: var(--light); 
+    font-size: 1.6rem;
+    margin-bottom: 13rem;
+}
+
+.random-text--reviews {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin-top: 3rem;
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1.1;
+    text-align: center;
+
+    a{
+        color: inherit;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.random-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 1rem;
+}
+
+@media (max-width: 760px){
+    .random-text-item{
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .random-text{
+        margin-bottom: 10rem;
+    }
+
+    .random-text--reviews {
+        font-size: 1.8rem;
+    }
+
+    .random-icon{
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+}

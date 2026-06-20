@@ -1,0 +1,50 @@
+.gallery {
+    height: 62.5rem;
+}
+
+.gallery-item {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 4.5rem 2rem;
+}
+.gallery-title {
+    max-width: 75rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+
+    font-size: 9.6rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: var(--letter-spacing);
+    text-align: center;
+    color: var(--light);
+    opacity: 0.4;
+}
+
+.gallery-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+@media (max-width: 760px){
+    .gallery {
+        height: 30rem;
+    }
+    .gallery-title {
+        font-size: 3.6rem;
+    }
+    .gallery-item {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+}

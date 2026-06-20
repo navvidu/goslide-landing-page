@@ -1,0 +1,22 @@
+.move-up {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    z-index: var(--moveup-z);
+}
+
+.move-up-icon {
+    display: block;
+    width: 6rem;
+    height: 6rem;
+}
+
+@media (max-width: 760px){
+    .move-up {
+        right: 1rem;
+    }
+   .move-up-icon {
+        width: 4rem;
+        height: 4rem;
+    }
+}

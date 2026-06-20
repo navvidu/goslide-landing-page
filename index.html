@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>GoSlide</title>
+</head>
+<body>
+    
+    <svg style="display: none;">
+        <symbol id="order-icon" viewBox="0 0 20 20" fill="none">
+            <path d="M13.3333 8.33333C13.3333 9.21739 12.9821 10.0652 12.357 10.6904C11.7319 11.3155 10.8841 11.6667 10 11.6667C9.11594 11.6667 8.2681 11.3155 7.64298 10.6904C7.01786 10.0652 6.66667 9.21739 6.66667 8.33333M2.58583 5.02833H17.4142M2.83333 4.55583C2.61696 4.84433 2.5 5.19522 2.5 5.55583V16.6667C2.5 17.1087 2.67559 17.5326 2.98816 17.8452C3.30072 18.1577 3.72464 18.3333 4.16667 18.3333H15.8333C16.2754 18.3333 16.6993 18.1577 17.0118 17.8452C17.3244 17.5326 17.5 17.1087 17.5 16.6667V5.55583C17.5 5.19522 17.383 4.84433 17.1667 4.55583L15.5 2.33333C15.3448 2.12634 15.1434 1.95834 14.912 1.84262C14.6806 1.72691 14.4254 1.66667 14.1667 1.66667H5.83333C5.57459 1.66667 5.3194 1.72691 5.08798 1.84262C4.85655 1.95834 4.65525 2.12634 4.5 2.33333L2.83333 4.55583Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+
+        <symbol id="arrow-prev-icon" viewBox="0 0 45 45" fill="none">
+            <path d="M22.5 30L30 22.5M30 22.5L22.5 15M30 22.5H15M41.25 22.5C41.25 32.8553 32.8553 41.25 22.5 41.25C12.1447 41.25 3.75 32.8553 3.75 22.5C3.75 12.1447 12.1447 3.75 22.5 3.75C32.8553 3.75 41.25 12.1447 41.25 22.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+    </svg>
+
+<header class="header">
+    <a class="header-logo" href="#">
+        <img class="header-logo-icon" src="assets/images/drone.svg" alt="">
+        <span class="header-brand">GoSlide</span></a>
+    <nav class="nav">
+        <a class="nav-link hover-line" href="#">Overview </a>
+        <a class="nav-link hover-line" href="#">Features</a>
+        <a class="nav-link hover-line" href="#">Techology</a>
+        <a class="nav-link hover-line" href="#">Design</a>
+        <a class="nav-link hover-line" href="#">Review</a>
+        <a class="nav-link hover-line" href="#">Pricing</a>
+    </nav>
+    <a class="btn" href="#">
+       
+        <svg class="btn-icon">
+            <use href="#order-icon">
+
+            </use>
+        </svg>
+        order now
+    </a>
+
+    <button class="burger-btn" type="button">
+        <span>Toggle menu </span>
+    </button>
+</header>
+
+<section class="section hero" id="hero">
+    <div class="container">
+        <h1 class="hero-title">Slide control</h1>
+        <img class="hero-image" src="/assets/images/mouse.png" alt="">
+        
+        <div class="hero-text">
+            <div class="hero-text-col">
+                <dl class="hero-list">
+                    <dt class="hero-list-title">weight</dt>
+                    <dd class="hero-list-text">55g</dd>
+                </dl>
+            </div>
+            <div class="hero-text-col">
+                <dl  class="hero-list hero-list-right">
+                    <dt class="hero-list-title">resolution</dt>
+                    <dd class="hero-list-text">100-20 000 DPI</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="hero-footer">
+            <a class="btn btn--large btn--shadow" href="#">
+            <img class="btn-icon" src="/assets/images/circle-play.svg" alt="">
+            play video</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="section section--light">
+   <div class="container">
+
+
+        <div class="info">
+            <div class="info-col">
+                <img class="info-photo" src="assets/images/mouse2.png" alt="">
+            </div> 
+        
+             <div class="info-col"> 
+                <h2 class="info-title">No Wires <br /> 100h Battery Life</h2>
+                <div class="info-text">
+                    <p>Quality is guaranteed by the latest wireless technology. The next evolution of our championship-winning mouse. 
+                        Meet the new weapon of choice for the world’s top esports athletes.</p>
+                </div>
+                <a class="btn btn--primary" href="#">Specs and Compatibility
+                    
+                    <img class="info-icon" src="assets/images/arrow-down.svg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <ul class="benefits">
+            <li class="benefits-items ">
+                <div class="benefits-num">01</div>
+                <div class="benefits-text">Feel the power of precision</div>
+            </li>
+            <li class="benefits-items">
+                <div class="benefits-num">02</div>
+                <div class="benefits-text">Experience the touch of perfection</div>  
+            </li>
+            <li class="benefits-items">
+                <div class="benefits-num">03</div>
+                <div class="benefits-text">Designed for comfort, built for control</div>
+            </li>
+        </ul>
+
+   </div>
+</section>
+
+
+<section class="section section--dark">
+   
+    <div class="container">
+        <h2 class="section-title section-title--gradient text-center">Specs and Compatibility</h2>
+        
+        <ul class="tech-list">
+            <li class="tech-list-item">
+                <img class="tech-list-icon" src="assets/images/ruler-dimension-line.svg" alt="">
+                <h3 class="tech-list-title">Dimensions</h3>
+                <p class="tech-list-text">Height: 40 mm <br>
+                    Width: 63 mm <br>
+                    Length: 125 mm</p>
+            </li>
+        
+            <li class="tech-list-item">
+                <img class="tech-list-icon" src="assets/images/table-rows-split.svg" alt="">
+                <h3 class="tech-list-title">Max Report Rate</h3>
+                <p class="tech-list-text">5000Hz</p>
+            </li>
+        
+            <li class="tech-list-item">
+                <img class="tech-list-icon" src="assets/images/battery-full.svg" alt="">
+                <h3 class="tech-list-title">Battery</h3>
+                <p class="tech-list-text">95 h Hrs *Battery life may vary based on user and computing conditions.</p>
+            </li>
+        
+            <li class="tech-list-item">
+                <img class="tech-list-icon" src="assets/images/monitor-cog.svg" alt="">
+                <h3 class="tech-list-title">System Requirements</h3>
+                <p class="tech-list-text">PC with Windows® 10 or later and USB 2.0 port.</p>
+            </li>
+
+            <li class="tech-list-item">
+                <img class="tech-list-icon" src="assets/images/table-rows-split.svg" alt="">
+                <h3 class="tech-list-title">Warranty</h3>
+                <p class="tech-list-text">2-Year Limited Hardware Warranty</p>
+            </li>
+        
+            <li class="tech-list-item">
+                <img class="tech-list-icon" src="assets/images/cpu.svg" alt="">
+                <h3 class="tech-list-title">Microprocessor</h3>
+                <p class="tech-list-text">32-bit ARM</p>
+            </li>
+        
+            <li class="tech-list-item">
+                <img class="tech-list-icon" src="assets/images/circle-gauge.svg" alt="">
+                <h3 class="tech-list-title">Max. speed</h3>
+                <p class="tech-list-text">>888 IPS</p>
+            </li>
+        
+            <li class="tech-list-item">
+                <img class="tech-list-icon" src="assets/images/memory-stick.svg" alt="">
+                <h3 class="tech-list-title">Sensor</h3>
+                <p class="tech-list-text">SUPER HERO 3</p>
+            </li>
+        </ul>
+
+        <div class="random-text">
+            <p><span class="badge badge--green">impressive</span>
+                <span class="random-text-item">High-quality precision and comfort 
+                with many more awesome features.</span></p>
+        </div>
+
+        <div class="info">
+            <div class="info-col">
+                <img class="info-photo" src="assets/images/mouse3.png" alt="">
+            </div> 
+        
+             <div class="info-col"> 
+                <h2 class="info-title info-title--light">Recycled Plastics</h2>
+                <div class="info-text">
+                    <p>The plastic parts in this mouse include certified post-consumer recycled plastic to give a next life to plastic from old consumer 
+                        electronics and help reduce our carbon footprint.</p>
+                </div>  
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="info-col">
+                <img class="info-photo" src="assets/images/mouse4.png" alt="">
+            </div> 
+        
+            <div class="info-col"> 
+                <h2 class="info-title info-title--light">Fastest Sensor</h2>
+                <div class="info-text">
+                    <p>Experience the reliability of tracking over 888+ IPS, and up to 20,000 DPI. In other words, this mouse won’t miss a beat while you focus
+                         on not missing your shot.</p>
+                </div>  
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--light">
+    <div class="container">
+        
+        <div class="info info--reviews">
+            <div class="info-col"> 
+                <h2 class="info-title">Hear from clients</h2>
+                <div class="info-text">
+                    <p>We receive a lot of feedback and constantly listen to our customers, improving
+                    our products every day to deliver better quality, comfort, and user experience.</p>
+                </div>
+                <a class="btn btn--primary" href="#">Read Reviews
+                    <img class="info-icon" src="assets/images/external-link.svg" alt="">
+                </a>
+            </div>
+            
+            <div class="info-col">
+                <div class="slider-arrows">
+                    <button class="slider-arrows-prev">
+                        <svg class="slider-arrows-icon">
+                        <use href="#arrow-prev-icon">
+                        </use>
+                    </svg>
+                    </button>
+                    <button class="slider-arrows-next">
+                    <svg class="slider-arrows-icon">
+                        <use href="#arrow-prev-icon">
+                        </use>
+                    </svg>
+                    </button>
+                </div>
+                <div class="reviews" data-autoplay="true" data-delay="5000">
+                    <div class="reviews-item">
+                        <img class="reviews-photo" src="assets/images/avatar.png" alt="">
+                        <div class="reviews-title">
+                            Every element is designed beautifully and perfect!
+                        </div>
+                        <div class="reviews-text">
+                            <p>Great mouse with smooth tracking, comfortable grip, and responsive buttons. Perfect for work and gaming, 
+                        stylish design, and excellent battery life.</p>
+                        </div>    
+                    </div>
+                    <div class="reviews-item">
+                        <img class="reviews-photo" src="assets/images/avatar.png" alt="">
+                        <div class="reviews-title">
+                            Exceptional quality and performance!
+                        </div>
+                        <div class="reviews-text">
+                            <p>This mouse exceeded my expectations. The wireless technology is flawless, and the battery lasts forever. Highly recommend for gamers.</p>
+                        </div>    
+                    </div>
+                    <div class="reviews-item">
+                        <img class="reviews-photo" src="assets/images/avatar.png" alt="">
+                        <div class="reviews-title">
+                            Best mouse I've ever used!
+                        </div>
+                        <div class="reviews-text">
+                            <p>Precision tracking and ergonomic design make this mouse a must-have. The DPI range is perfect for all my needs.</p>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+</section>
+
+<div class="gallery">
+    <div class="gallery-item">
+        <h2 class="gallery-title" data-titles='["Smooth tracking fast response", 
+        "Precision and comfort", "Long battery life", "Wireless freedom" ]'>
+        Smooth tracking fast response</h2>
+        <img class="gallery-photo" src="assets/images/cta1.jpg" alt="">
+        <img class="gallery-photo" src="assets/images/cta2.jpg" alt="">
+        <img class="gallery-photo" src="assets/images/cta3.jpg" alt="">
+        <img class="gallery-photo" src="assets/images/cta4.jpg" alt="">
+        
+    </div>
+</div>
+
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title text-center">Choose the perfect<br> 
+product for you</h2>
+            <div class="products">
+                <div class="products-item">
+                    <img class="products-photo" src="assets/images/colors/black.png" alt="">
+                    <div class="products-name">Black</div>
+                </div>
+                 <div class="products-item">
+                    <img class="products-photo" src="assets/images/colors/red.png" alt="">
+                    <div class="products-name">Red</div>
+                </div>
+                 <div class="products-item">
+                    <img class="products-photo" src="assets/images/colors/yellow.png" alt="">
+                    <div class="products-name">Yellow</div>
+                </div>
+                 <div class="products-item">
+                    <img class="products-photo" src="assets/images/colors/purple.png" alt="">
+                    <div class="products-name">Purple</div>
+                </div>
+            </div>
+
+            <div class="price">
+                <s>$99</s>
+                $59
+            </div>
+            <div class="text-center">
+                <a class="btn btn--gradient" href="#" target="_blank">
+                    <img class="btn-icon" src="assets/images/shopping-light-bag.svg" alt="">
+                Buy Now
+                </a>
+            </div>
+
+            <div class="random-text--reviews">
+                <img class="random-icon" src="assets/images/star.svg" alt="">
+                1238 reviews on <a href="#" target="_blank"> Amazon.com</a>
+            </div>
+        </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <address class="footer-contacts foote-col-phone">
+           <div class="footer-col">
+                <div class="footer-text">Let's talk with us</div>
+                <a class="footer-contacts-link hover-line" href="tel:1700777000">1-700-777-000</a>
+            </div>
+           
+                
+            <div class="footer-col footer-col-social">
+                <ul class="social-list">
+                     <li class="social-list-item">
+                        <a class="social-list-link" href="#" target="_blank">
+                            <img class="social-list-icon" src="assets/images/item.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a class="social-list-link" href="#" target="_blank">
+                            <img class="social-list-icon" src="assets/images/item-active.svg" alt="">
+                        </a>
+                    </li>
+                     <li class="social-list-item">
+                        <a class="social-list-link" href="#" target="_blank">
+                            <img class="social-list-icon" src="assets/images/item2.svg" alt="">
+                        </a>
+                    </li>
+                     
+                 </ul>
+            </div>
+
+             <div class="footer-col footer-col-email">
+                <div class="footer-text">Get customer care</div>
+                <a class="footer-contacts-link hover-line" href="mailto:info@domain.com">info@domain.com</a>
+            </div>
+        
+        </address>
+    </div>
+
+     <div class="footer-info">
+        <div class="container">
+            <div class="footer-info-inner">
+
+                <nav class="footer-nav">
+                    <a class="footer-nav-link hover-line" href="#">Payment</a>
+                    <a class="footer-nav-link hover-line" href="#">Delivery</a>
+                    <a class="footer-nav-link hover-line" href="#">Terms and Conditions</a>
+                    <a class="footer-nav-link hover-line" href="#">Privacy Policy</a>
+                </nav>
+
+                <ul class="footer-payments">
+                    <li class="footer-payments-item">
+                        <img class="footer-payments-icon" src="assets/images/visa.png" alt="We accept Visa and MasterCard">   
+                    </li>
+                    <li class="footer-payments-item">
+                        <img class="footer-payments-icon" src="assets/images/PayPal.svg.png" alt="We accept PayPal">
+                    </li>
+                
+                </ul>
+            </div>
+        </div>
+           
+    </div>
+</footer>
+
+<a class="move-up" href="#hero">
+    <img class="move-up-icon" src="assets/images/move-up.svg" alt="">
+</a>
+
+<script src="js/app.js">    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+.text-center {
+    text-align: center;
+}
+
+.hover-line {
+    position: relative;
+    &::after{
+        content: "";
+        display: block;
+        width: 0;
+        height: 1px;
+
+        background-color: currentColor;
+        opacity: 0;
+        top: 100%;
+        position: absolute;
+       
+        left: 50%;
+        z-index: 1;
+
+        transform: translate3d(-50%, 4px, 0);
+        transition: opacity .2s linear, width .2s linear;
+    }
+
+    &:hover,
+    &:focus {
+        &::after{
+            opacity: 1;
+            width: 100%;
+        }
+    }
+
+     &:focus {
+        outline: none;
+    }
+}
